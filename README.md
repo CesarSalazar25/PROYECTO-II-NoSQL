@@ -1,22 +1,4 @@
-# AECHMEA - App de Fauna y Flora Venezolana
-
-Este proyecto se basa en el desarrollo de una BD NoSQL, usando para ello Firebase y Angular, que tiene como tema el desarrollo de una aplicación que detalla sobre los datos de la fauna y flora presente en el territorio nacional, detallando su nombre, estado de conservación y otros aspectos.
-
-#Notas:
-
--Framework Front-end usado: Bootstrap
-
--Tipo de DB de Firebase usado: RealTime Database
-
--Links de Hojas de cálculo de Drive con la que se hace sincronización (De Drive a Firebase):
-
-	-Tabla de Flora: `https://docs.google.com/spreadsheets/d/1UrqhIO-68ruVPRNbx606YGDPt38vS7kRACNLmIb1Tsc/edit#gid=0`
-  
-	-Tabla de Fauna: `https://docs.google.com/spreadsheets/d/1xlElaSi0uhvnOJoWmJ4HxIVObDAvWdTPIoT01YxRBtA/edit#gid=0`
-  
-	Nota:Todavía no se logra la sincronización al contrario (De Firebase a Drive).
-
------------------------------------------------------------------------------------------------------------------------------------
+# AechmeaProyNoSQL
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.7.3.
 
@@ -43,3 +25,4 @@ Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protrac
 ## Further help
 
 To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+# Proyecto-NoSQL-Aechmea
