@@ -1,6 +1,6 @@
 import { AppPage } from './app.po';
 
-describe('aechmea-proy-no-sql App', () => {
+describe('proyecto-ii-aechmea App', () => {
   let page: AppPage;
 
   beforeEach(() => {
