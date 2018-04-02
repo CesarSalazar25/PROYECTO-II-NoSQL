@@ -4,7 +4,7 @@
 // The list of which env maps to which file can be found in `.angular-cli.json`.
 
 export const environment = {
-  production: true,
+  production: false,
 
   //Se conecta con la base de datos Realtime hecha en Firebase:
   firebase: {
