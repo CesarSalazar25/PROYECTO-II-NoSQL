@@ -4,10 +4,8 @@ import { NgForm } from '@angular/forms';
 //Import de Service: 
 import { FaunaService } from '../../../services/fauna.service';
 
-
 //Import de la Clase:
 import { Fauna } from '../../../models/fauna';
-
 
 //Import del toastr:
 import { ToastrService } from 'ngx-toastr';
@@ -19,10 +17,10 @@ import { ToastrService } from 'ngx-toastr';
 })
 export class FaunaComponent implements OnInit {
 
-  constructor( private faunaService: FaunaService, private toastr: ToastrService) { }
+  constructor( private faunaService: FaunaService, private toastr: ToastrService) {}
 
   ngOnInit() 
-  {
+  { 
     this.faunaService.getFauna();
     this.resetForm();
   }

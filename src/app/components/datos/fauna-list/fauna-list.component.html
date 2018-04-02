@@ -1,12 +1,25 @@
-<div class="card mt-5">
-  <div class="card-body">
-    <h3 class="font-weight-bold">Lista de Fauna</h3>
-    <hr style="color: #0056b2;" />
-    <table class="table table-sm table-hover">
+<div class="card mt-5 text-center">
+  <div class="table">
+    <!--<h3 class="font-weight-bold">Lista de Fauna</h3>
+    <hr style="color: #0056b2;" />-->
+    <table class="table table-sm table-hover table-bordered">
+        <thead class="thead-dark">
+        <tr>
+          <th scope="col">Foto</th>
+          <th scope="col">Nombre</th>
+          <th scope="col">Dieta</th>
+          <th scope="col">Biomedio</th>
+          <th scope="col">Conservación</th>
+          <!--<th scope="col">Handle</th>-->
+        </tr>
+        </thead>
       <tbody>
         <tr *ngFor="let fauna of faunaList">
-          <td><img width="200" src="{{fauna.foto}}" alt="..."></td>
+          <td><img width="100" src="{{fauna.foto}}" alt="..."></td>
           <td>{{fauna.nombre}}</td>
+          <td>{{fauna.dieta}}</td>
+          <td>{{fauna.bioma}}</td>
+          <td>{{fauna.estado}}</td>
           <td>
             <a class="btn btn-secondary text-white" (click)="onEdit(fauna)">
                 <i class="far fa-edit"></i>

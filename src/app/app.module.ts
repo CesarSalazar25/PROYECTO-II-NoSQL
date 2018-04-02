@@ -1,7 +1,7 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { AppComponent } from './app.component';
-
+import { AppRoutingModule } from './app-routing.module';
 import { FormsModule } from '@angular/forms';
 
 //Imports para usar Firestore:
@@ -47,7 +47,7 @@ import { ToastrModule } from 'ngx-toastr';
   imports: 
   [
     BrowserModule,
-
+    AppRoutingModule,
     //Para RealTime DB:
     AngularFireDatabaseModule,
     AngularFireModule.initializeApp(environment.firebase),

@@ -7,6 +7,7 @@ import { AngularFireDatabase, AngularFireList } from 'angularfire2/database';
 import { Fauna } from '../models/fauna';
 
 
+
 @Injectable()
 export class FaunaService 
 {
@@ -20,6 +21,7 @@ export class FaunaService
   {
     return this.faunaList = this.firebase.list('Fauna');
   }
+
 
   //Método para insertar un animal:
   insertFauna(fauna: Fauna)

@@ -1,6 +1,8 @@
+import { Fotos } from './fotos';
+
 export class Fauna {
     $key: string;
-	foto: string;
+	foto: [Fotos];
     nombre: string;
     dieta: string;
     bioma: string;
