@@ -1,12 +1,13 @@
-import { NgModule }             from '@angular/core';
+import { NgModule }  from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { FaunaComponent }   from './components/datos/fauna/fauna.component';
-import { FloraComponent }      from './components/datos/flora/flora.component';
+import { FloraComponent }   from './components/datos/flora/flora.component';
+import { DatosComponent }   from './components/datos/datos.component';
 
 const routes: Routes = [
-  { path: '', redirectTo: ' https://cesarsalazar25.github.io/datos', pathMatch: 'full' },
-  { path: ' https://cesarsalazar25.github.io/fauna', component:  FaunaComponent },
-  { path: ' https://cesarsalazar25.github.io/flora', component: FloraComponent },
+  { path: '', redirectTo: ' /datos', pathMatch: 'full' },
+  { path: 'fauna', component:  FaunaComponent },
+  { path: 'flora', component: FloraComponent },
 ];
 
 @NgModule({

@@ -24,6 +24,7 @@ export class FloraService
   //Método para insertar un animal:
   insertFlora(flora: Flora)
   {
+    
     this.floraList.push({
       nombre: flora.nombre,
       bioma: flora.bioma,
@@ -32,7 +33,7 @@ export class FloraService
       orden: flora.orden,
       familia: flora.familia,
       genero: flora.genero,
-      especie: flora.especie,
+      especie: flora.especie
     });
   }
 
@@ -40,7 +41,7 @@ export class FloraService
   updateFlora(flora: Flora)
   {
     this.floraList.update(flora.$key, {
-      foto: flora.foto,
+      //foto: flora.foto,
       nombre: flora.nombre,
       bioma: flora.bioma,
       estado: flora.estado,
@@ -48,7 +49,7 @@ export class FloraService
       orden: flora.orden,
       familia: flora.familia,
       genero: flora.genero,
-      especie: flora.especie,
+      especie: flora.especie
     });
   }
 

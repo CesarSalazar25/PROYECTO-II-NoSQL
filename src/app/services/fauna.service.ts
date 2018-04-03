@@ -63,5 +63,6 @@ export class FaunaService
     this.faunaList.remove($key);
   }
 
+  //Query de filtrado:
 
 }
