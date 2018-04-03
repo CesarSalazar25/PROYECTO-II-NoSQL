@@ -67,7 +67,7 @@ module.exports = ""
 /***/ "./src/app/app.component.html":
 /***/ (function(module, exports) {
 
-module.exports = "<!--¡Hola mami! ¡Mira soy un comentario en HTML! <3-->\r\n  <nav class=\"navbar navbar-expand-lg navbar-dark bg-dark\">\r\n  <a class=\"navbar-brand\" href=\"#\">Aechmea - Fauna y Flora de Venezuela</a>\r\n  <button class=\"navbar-toggler\" type=\"button\" data-toggle=\"collapse\" data-target=\"#navbarNavAltMarkup\" aria-controls=\"navbarNavAltMarkup\" aria-expanded=\"false\" aria-label=\"Toggle navigation\">\r\n    <span class=\"navbar-toggler-icon\"></span>\r\n  </button>\r\n</nav>\r\n\r\n<div class=\"text-center\">\r\n  <img width=\"400\" src=\"https://firebasestorage.googleapis.com/v0/b/aechmea-flora-y-fauna-de-vzla.appspot.com/o/Recursos%2Faechmea_applogo.png?alt=media&token=db6d4528-dbad-4f33-88db-915bbbbbecf0\" class=\"rounded\" alt=\"Aechmea Logo\">\r\n</div>\r\n    <hr style=\"color: #0056b2;\" />\r\n    <div class=\"card text-center\">\r\n  <div class=\"card-body\">\r\n    ¡Bienvenido a Aechmea! Tu apliciación confiable y actualizada sobre la fauna y flora de Venezuela, paséate por ambas secciones y descubre las diversas y exóticas especies que habitan en los diversos ecosistemas del país.\r\n  </div>\r\n</div>\r\n  <app-datos></app-datos>\r\n"
+module.exports = "<!--¡Hola mami! ¡Mira soy un comentario en HTML! <3-->\r\n  <nav class=\"navbar navbar-expand-lg navbar-dark bg-dark\">\r\n  <a class=\"navbar-brand\" href=\"#\">Aechmea - Fauna y Flora de Venezuela</a>\r\n  <button class=\"navbar-toggler\" type=\"button\" data-toggle=\"collapse\" data-target=\"#navbarNavAltMarkup\" aria-controls=\"navbarNavAltMarkup\" aria-expanded=\"false\" aria-label=\"Toggle navigation\">\r\n    <span class=\"navbar-toggler-icon\"></span>\r\n  </button>\r\n\r\n\t<a class=\"nav-item nav-link active\" href=\" /fauna\">Fauna <span class=\"sr-only\">(current)</span></a>\r\n\t<a class=\"nav-item nav-link\" href=\"flora\">Flora</a>\r\n</nav>\r\n\r\n<div class=\"text-center\">\r\n  <img width=\"400\" src=\"https://firebasestorage.googleapis.com/v0/b/aechmea-flora-y-fauna-de-vzla.appspot.com/o/Recursos%2Faechmea_applogo.png?alt=media&token=db6d4528-dbad-4f33-88db-915bbbbbecf0\" class=\"rounded\" alt=\"Aechmea Logo\">\r\n</div>\r\n    <hr style=\"color: #0056b2;\" />\r\n    <div class=\"card text-center\">\r\n  <div class=\"card-body\">\r\n    ¡Bienvenido a Aechmea! Tu aplicación confiable y actualizada sobre la fauna y flora de Venezuela, paséate por ambas secciones y descubre las diversas y exóticas especies que habitan en los diversos ecosistemas del país.\r\n  </div>\r\n</div>\r\n  <app-datos></app-datos>\r\n"
 
 /***/ }),
 
@@ -204,7 +204,7 @@ module.exports = ""
 /***/ "./src/app/components/datos/datos.component.html":
 /***/ (function(module, exports) {
 
-module.exports = "\n<app-fauna></app-fauna>\n<hr style=\"color: #0056b2;\" />\n<app-flora></app-flora>\n\n"
+module.exports = "<app-router><app-router>\n\n"
 
 /***/ }),
 
