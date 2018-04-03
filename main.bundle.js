@@ -17,6 +17,46 @@ webpackEmptyAsyncContext.id = "./src/$$_lazy_route_resource lazy recursive";
 
 /***/ }),
 
+/***/ "./src/app/app-routing.module.ts":
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return AppRoutingModule; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__("./node_modules/@angular/core/esm5/core.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_router__ = __webpack_require__("./node_modules/@angular/router/esm5/router.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__components_datos_fauna_fauna_component__ = __webpack_require__("./src/app/components/datos/fauna/fauna.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__components_datos_flora_flora_component__ = __webpack_require__("./src/app/components/datos/flora/flora.component.ts");
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+
+
+
+
+var routes = [
+    { path: '', redirectTo: '/datos', pathMatch: 'full' },
+    { path: 'fauna', component: __WEBPACK_IMPORTED_MODULE_2__components_datos_fauna_fauna_component__["a" /* FaunaComponent */] },
+    { path: 'flora', component: __WEBPACK_IMPORTED_MODULE_3__components_datos_flora_flora_component__["a" /* FloraComponent */] },
+];
+var AppRoutingModule = /** @class */ (function () {
+    function AppRoutingModule() {
+    }
+    AppRoutingModule = __decorate([
+        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["I" /* NgModule */])({
+            imports: [__WEBPACK_IMPORTED_MODULE_1__angular_router__["a" /* RouterModule */].forRoot(routes)],
+            exports: [__WEBPACK_IMPORTED_MODULE_1__angular_router__["a" /* RouterModule */]]
+        })
+    ], AppRoutingModule);
+    return AppRoutingModule;
+}());
+
+
+
+/***/ }),
+
 /***/ "./src/app/app.component.css":
 /***/ (function(module, exports) {
 
@@ -27,7 +67,7 @@ module.exports = ""
 /***/ "./src/app/app.component.html":
 /***/ (function(module, exports) {
 
-module.exports = "<!--¡Hola mami! ¡Mira soy un comentario en HTML! <3-->\n  <nav class=\"navbar navbar-dark bg-dark\">\n    <a class=\"navbar-brand\" href=\"/\">Aechmea - Fauna y Flora de Venezuela</a>\n</nav>\n<div class=\"text-center\">\n  <img width=\"400\" src=\"https://firebasestorage.googleapis.com/v0/b/aechmea-flora-y-fauna-de-vzla.appspot.com/o/Recursos%2Faechmea_applogo.png?alt=media&token=db6d4528-dbad-4f33-88db-915bbbbbecf0\" class=\"rounded\" alt=\"Aechmea Logo\">\n</div>\n\n  <app-datos></app-datos>\n"
+module.exports = "<!--¡Hola mami! ¡Mira soy un comentario en HTML! <3-->\n  <nav class=\"navbar navbar-expand-lg navbar-dark bg-dark\">\n  <a class=\"navbar-brand\" href=\"#\">Aechmea - Fauna y Flora de Venezuela</a>\n  <button class=\"navbar-toggler\" type=\"button\" data-toggle=\"collapse\" data-target=\"#navbarNavAltMarkup\" aria-controls=\"navbarNavAltMarkup\" aria-expanded=\"false\" aria-label=\"Toggle navigation\">\n    <span class=\"navbar-toggler-icon\"></span>\n  </button>\n  <div class=\"collapse navbar-collapse\" id=\"navbarNavAltMarkup\">\n    <div class=\"navbar-nav\">\n      <a class=\"nav-item nav-link active\" href=\"/fauna\">Fauna<span class=\"sr-only\">(current)</span></a>\n      <a class=\"nav-item nav-link\" href=\"/flora\">Flora</a>\n    </div>\n  </div>\n</nav>\n\n<div class=\"text-center\">\n  <img width=\"400\" src=\"https://firebasestorage.googleapis.com/v0/b/aechmea-flora-y-fauna-de-vzla.appspot.com/o/Recursos%2Faechmea_applogo.png?alt=media&token=db6d4528-dbad-4f33-88db-915bbbbbecf0\" class=\"rounded\" alt=\"Aechmea Logo\">\n</div>\n    <hr style=\"color: #0056b2;\" />\n    <div class=\"card text-justified\">\n  <div class=\"card-body\">\n    ¡Bienvenido a Aechmea! Tu apliciación confiable y actualizada sobre la fauna y flora de Venezuela, paséate por ambas secciones y descubre las diversas y exóticas especies que habitan en los diversos ecosistemas del país.\n  </div>\n</div>\n  <app-datos></app-datos>\n"
 
 /***/ }),
 
@@ -50,22 +90,11 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 var AppComponent = /** @class */ (function () {
     function AppComponent() {
         this.title = 'Aechmea';
-        //Para firestore:
-        /*itemsCollection: AngularFirestoreCollection<Items>;
-        items: Observable<Items[]>;
-      
-        constructor(public afs: AngularFirestore){ }
-      
-        ngOnInit()
-        {
-          this.itemsCollection = this.afs.collection('items', ref=>{
-            return ref.orderBy('nombre_Animal');
-          })
-          this.items = this.itemsCollection.valueChanges();
-        }*/
     }
+    AppComponent.prototype.ngOnInit = function () {
+    };
     AppComponent = __decorate([
-        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
+        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["n" /* Component */])({
             selector: 'app-root',
             template: __webpack_require__("./src/app/app.component.html"),
             styles: [__webpack_require__("./src/app/app.component.css")]
@@ -86,19 +115,19 @@ var AppComponent = /** @class */ (function () {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_platform_browser__ = __webpack_require__("./node_modules/@angular/platform-browser/esm5/platform-browser.js");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_core__ = __webpack_require__("./node_modules/@angular/core/esm5/core.js");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__app_component__ = __webpack_require__("./src/app/app.component.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__angular_forms__ = __webpack_require__("./node_modules/@angular/forms/esm5/forms.js");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_angularfire2_database__ = __webpack_require__("./node_modules/angularfire2/database/index.js");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5_angularfire2__ = __webpack_require__("./node_modules/angularfire2/index.js");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__environments_environment__ = __webpack_require__("./src/environments/environment.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__components_datos_datos_component__ = __webpack_require__("./src/app/components/datos/datos.component.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__components_datos_fauna_list_fauna_list_component__ = __webpack_require__("./src/app/components/datos/fauna-list/fauna-list.component.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__components_datos_flora_list_flora_list_component__ = __webpack_require__("./src/app/components/datos/flora-list/flora-list.component.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__components_datos_fauna_fauna_component__ = __webpack_require__("./src/app/components/datos/fauna/fauna.component.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_11__components_datos_flora_flora_component__ = __webpack_require__("./src/app/components/datos/flora/flora.component.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_12__components_datos_fotos_fotos_component__ = __webpack_require__("./src/app/components/datos/fotos/fotos.component.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_13__services_fauna_service__ = __webpack_require__("./src/app/services/fauna.service.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_14__services_flora_service__ = __webpack_require__("./src/app/services/flora.service.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_15__services_fotos_service__ = __webpack_require__("./src/app/services/fotos.service.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__app_routing_module__ = __webpack_require__("./src/app/app-routing.module.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__angular_forms__ = __webpack_require__("./node_modules/@angular/forms/esm5/forms.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__angular_common_http__ = __webpack_require__("./node_modules/@angular/common/esm5/http.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6_angularfire2_database__ = __webpack_require__("./node_modules/angularfire2/database/index.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7_angularfire2__ = __webpack_require__("./node_modules/angularfire2/index.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__environments_environment__ = __webpack_require__("./src/environments/environment.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__components_datos_datos_component__ = __webpack_require__("./src/app/components/datos/datos.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__components_datos_fauna_list_fauna_list_component__ = __webpack_require__("./src/app/components/datos/fauna-list/fauna-list.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_11__components_datos_flora_list_flora_list_component__ = __webpack_require__("./src/app/components/datos/flora-list/flora-list.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_12__components_datos_fauna_fauna_component__ = __webpack_require__("./src/app/components/datos/fauna/fauna.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_13__components_datos_flora_flora_component__ = __webpack_require__("./src/app/components/datos/flora/flora.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_14__services_fauna_service__ = __webpack_require__("./src/app/services/fauna.service.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_15__services_flora_service__ = __webpack_require__("./src/app/services/flora.service.ts");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_16__angular_platform_browser_animations__ = __webpack_require__("./node_modules/@angular/platform-browser/esm5/animations.js");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_17_ngx_toastr__ = __webpack_require__("./node_modules/ngx-toastr/esm5/ngx-toastr.js");
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
@@ -111,9 +140,8 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 
 
 
-//Imports para usar Firestore:
-//import { AngularFirestoreModule } from 'angularfire2/firestore';
-//import { AngularFireModule } from 'angularfire2';
+
+
 //Imports para usar RealTime DB:
 
 
@@ -125,9 +153,7 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 
 
 
-
 //Import de los Servicios (services):
-
 
 
 //Import del Toastr:
@@ -137,29 +163,27 @@ var AppModule = /** @class */ (function () {
     function AppModule() {
     }
     AppModule = __decorate([
-        Object(__WEBPACK_IMPORTED_MODULE_1__angular_core__["G" /* NgModule */])({
+        Object(__WEBPACK_IMPORTED_MODULE_1__angular_core__["I" /* NgModule */])({
             declarations: [
                 __WEBPACK_IMPORTED_MODULE_2__app_component__["a" /* AppComponent */],
-                __WEBPACK_IMPORTED_MODULE_7__components_datos_datos_component__["a" /* DatosComponent */],
-                __WEBPACK_IMPORTED_MODULE_10__components_datos_fauna_fauna_component__["a" /* FaunaComponent */],
-                __WEBPACK_IMPORTED_MODULE_11__components_datos_flora_flora_component__["a" /* FloraComponent */],
-                __WEBPACK_IMPORTED_MODULE_8__components_datos_fauna_list_fauna_list_component__["a" /* FaunaListComponent */],
-                __WEBPACK_IMPORTED_MODULE_9__components_datos_flora_list_flora_list_component__["a" /* FloraListComponent */],
-                __WEBPACK_IMPORTED_MODULE_12__components_datos_fotos_fotos_component__["a" /* FotosComponent */]
+                __WEBPACK_IMPORTED_MODULE_9__components_datos_datos_component__["a" /* DatosComponent */],
+                __WEBPACK_IMPORTED_MODULE_12__components_datos_fauna_fauna_component__["a" /* FaunaComponent */],
+                __WEBPACK_IMPORTED_MODULE_13__components_datos_flora_flora_component__["a" /* FloraComponent */],
+                __WEBPACK_IMPORTED_MODULE_10__components_datos_fauna_list_fauna_list_component__["a" /* FaunaListComponent */],
+                __WEBPACK_IMPORTED_MODULE_11__components_datos_flora_list_flora_list_component__["a" /* FloraListComponent */]
             ],
             imports: [
                 __WEBPACK_IMPORTED_MODULE_0__angular_platform_browser__["a" /* BrowserModule */],
+                __WEBPACK_IMPORTED_MODULE_3__app_routing_module__["a" /* AppRoutingModule */],
+                __WEBPACK_IMPORTED_MODULE_5__angular_common_http__["a" /* HttpClientModule */],
                 //Para RealTime DB:
-                __WEBPACK_IMPORTED_MODULE_4_angularfire2_database__["b" /* AngularFireDatabaseModule */],
-                __WEBPACK_IMPORTED_MODULE_5_angularfire2__["a" /* AngularFireModule */].initializeApp(__WEBPACK_IMPORTED_MODULE_6__environments_environment__["a" /* environment */].firebase),
-                __WEBPACK_IMPORTED_MODULE_3__angular_forms__["a" /* FormsModule */],
+                __WEBPACK_IMPORTED_MODULE_6_angularfire2_database__["b" /* AngularFireDatabaseModule */],
+                __WEBPACK_IMPORTED_MODULE_7_angularfire2__["a" /* AngularFireModule */].initializeApp(__WEBPACK_IMPORTED_MODULE_8__environments_environment__["a" /* environment */].firebase),
+                __WEBPACK_IMPORTED_MODULE_4__angular_forms__["a" /* FormsModule */],
                 __WEBPACK_IMPORTED_MODULE_17_ngx_toastr__["a" /* ToastrModule */].forRoot(),
                 __WEBPACK_IMPORTED_MODULE_16__angular_platform_browser_animations__["a" /* BrowserAnimationsModule */]
-                //Para Firestore:
-                //AngularFireModule.initializeApp(environment.firebase, 'angular-fs'),
-                //AngularFirestoreModule
             ],
-            providers: [__WEBPACK_IMPORTED_MODULE_13__services_fauna_service__["a" /* FaunaService */], __WEBPACK_IMPORTED_MODULE_14__services_flora_service__["a" /* FloraService */], __WEBPACK_IMPORTED_MODULE_15__services_fotos_service__["a" /* FotosService */]],
+            providers: [__WEBPACK_IMPORTED_MODULE_14__services_fauna_service__["a" /* FaunaService */], __WEBPACK_IMPORTED_MODULE_15__services_flora_service__["a" /* FloraService */]],
             bootstrap: [__WEBPACK_IMPORTED_MODULE_2__app_component__["a" /* AppComponent */]]
         })
     ], AppModule);
@@ -180,7 +204,7 @@ module.exports = ""
 /***/ "./src/app/components/datos/datos.component.html":
 /***/ (function(module, exports) {
 
-module.exports = "<div class=\"container\">\n    <div class=\"row\">\n      <div class=\"col-md-5 text-center\">\n       <app-fauna></app-fauna> \n      <!--  <app-flora></app-flora>-->\n      </div>\n      <div class=\"col-md-7 text-center\">\n        <app-fauna-list></app-fauna-list> \n        <!--<app-flora-list></app-flora-list>-->\n        </div>\n    </div>\n</div>\n\n"
+module.exports = "<router-outlet></router-outlet> \n\n"
 
 /***/ }),
 
@@ -206,7 +230,7 @@ var DatosComponent = /** @class */ (function () {
     DatosComponent.prototype.ngOnInit = function () {
     };
     DatosComponent = __decorate([
-        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
+        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["n" /* Component */])({
             selector: 'app-datos',
             template: __webpack_require__("./src/app/components/datos/datos.component.html"),
             styles: [__webpack_require__("./src/app/components/datos/datos.component.css")]
@@ -230,7 +254,7 @@ module.exports = ""
 /***/ "./src/app/components/datos/fauna-list/fauna-list.component.html":
 /***/ (function(module, exports) {
 
-module.exports = "<div class=\"card mt-5\">\n  <div class=\"card-body\">\n    <h3 class=\"font-weight-bold\">Lista de Fauna</h3>\n    <hr style=\"color: #0056b2;\" />\n    <table class=\"table table-sm table-hover\">\n      <tbody>\n        <tr *ngFor=\"let fauna of faunaList\">\n          <td><img width=\"200\" src=\"{{fauna.foto}}\" alt=\"...\"></td>\n          <td>{{fauna.nombre}}</td>\n          <td>\n            <a class=\"btn btn-secondary text-white\" (click)=\"onEdit(fauna)\">\n                <i class=\"far fa-edit\"></i>\n            </a>\n            <a class=\"btn btn-danger text-white\" (click)=\"onDelete(fauna.$key)\">\n                <i class=\"fas fa-trash-alt\"></i>\n            </a>\n          </td>\n        </tr>\n      </tbody>\n    </table>\n  </div>\n</div>"
+module.exports = "<div class=\"card mt-5 text-center\">  \n  <div class=\"table\">\n    <!--<h3 class=\"font-weight-bold\">Lista de Fauna</h3>\n    <hr style=\"color: #0056b2;\" />-->\n    <table class=\"table table-sm table-hover table-bordered\">\n        <thead class=\"thead-dark\">\n          <th scope=\"col\">Foto</th>\n          <th scope=\"col\">Nombre</th>\n          <th scope=\"col\">Dieta</th>\n          <th scope=\"col\">Biomedio</th>\n          <th scope=\"col\">Conservación</th>\n        </thead>\n      <tbody>\n        <tr *ngFor=\"let fauna of faunaList\">\n          <td><img width=\"100\" src=\"{{fauna.foto}}\" alt=\"...\"></td>\n          <td>{{fauna.nombre}}</td>\n          <td>{{fauna.dieta}}</td>\n          <td>{{fauna.bioma}}</td>\n          <td>{{fauna.estado}}</td>\n          <td>\n            <a class=\"btn btn-secondary text-white\" (click)=\"onEdit(fauna)\">\n                <i class=\"far fa-edit\"></i>\n            </a>\n            <a class=\"btn btn-danger text-white\" (click)=\"onDelete(fauna.$key)\">\n                <i class=\"fas fa-trash-alt\"></i>\n            </a>\n          </td>\n        </tr>\n      </tbody>\n    </table>\n  </div>\n</div>"
 
 /***/ }),
 
@@ -283,7 +307,7 @@ var FaunaListComponent = /** @class */ (function () {
         }
     };
     FaunaListComponent = __decorate([
-        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
+        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["n" /* Component */])({
             selector: 'app-fauna-list',
             template: __webpack_require__("./src/app/components/datos/fauna-list/fauna-list.component.html"),
             styles: [__webpack_require__("./src/app/components/datos/fauna-list/fauna-list.component.css")]
@@ -307,7 +331,7 @@ module.exports = ""
 /***/ "./src/app/components/datos/fauna/fauna.component.html":
 /***/ (function(module, exports) {
 
-module.exports = "<div class=\"card mt-5\">\n  <div class=\"card-body\">\n  \t<h3 class=\"font-weight-bold\">Fauna</h3>\n  \t<hr style=\"color: #0056b2;\" />\n  \t<h5>-Datos Generales-</h5>\n      <form #faunaForm=\"ngForm\" (ngSubmit)=\"onSubmit(faunaForm)\">\n          <!-- Para actualizar los campos de un animal -->\n          <input type=\"hidden\" name=\"$key\" #$key=\"ngModel\" [(ngModel)]=\"faunaService.selectedFauna.$key\">\n\n          <div class=\"form-group\">\n            <input  disabled\n              typeblock=\"null\"\n              class=\"form-control\"\n              name=\"foto\"\n              #foto=\"ngModel\"\n              [(ngModel)]=\"faunaService.selectedFauna.foto\"\n              placeholder=\"Foto de animal\"\n              >\n          </div>\n\n          <div class=\"form-group\">\n            <input \n              type=\"text\"\n              class=\"form-control\"\n              name=\"nombre\"\n              #nombre=\"ngModel\"\n              [(ngModel)]=\"faunaService.selectedFauna.nombre\"\n              placeholder=\"Añade el nombre del animal\"\n              >\n          </div>\n          <div class=\"form-group\">\n              <input \n                type=\"text\"\n                class=\"form-control\"\n                name=\"dieta\"\n                #dieta=\"ngModel\"\n                [(ngModel)]=\"faunaService.selectedFauna.dieta\"\n                placeholder=\"Añade la dieta del animal\"\n                >\n            </div>\n          <div class=\"form-group\">\n            <input \n              type=\"text\"\n              class=\"form-control\"\n              name=\"bioma\"\n              #bioma=\"ngModel\"\n              [(ngModel)]=\"faunaService.selectedFauna.bioma\"\n              placeholder=\"Añade el biomedio del animal\"\n              >\n          </div>\n          <div class=\"form-group\">\n              <input \n                type=\"text\"\n                class=\"form-control\"\n                name=\"estado\"\n                #estado=\"ngModel\"\n                [(ngModel)]=\"faunaService.selectedFauna.estado\"\n                placeholder=\"Añade el estado de conservación\"\n                >\n          </div>\n          <hr style=\"color: #0056b2;\" />\n          <h5>-Datos Etimológicos-</h5>\n          <div class=\"form-group\">\n              <input \n                type=\"text\"\n                class=\"form-control\"\n                name=\"clase\"\n                #clase=\"ngModel\"\n                [(ngModel)]=\"faunaService.selectedFauna.clase\"\n                placeholder=\"Añade la Clase\"\n                >\n          </div>\n          <div class=\"form-group\">\n              <input \n                type=\"text\"\n                class=\"form-control\"\n                name=\"orden\"\n                #orden=\"ngModel\"\n                [(ngModel)]=\"faunaService.selectedFauna.orden\"\n                placeholder=\"Añade el Orden\"\n                >\n          </div>\n          <div class=\"form-group\">\n              <input \n                type=\"text\"\n                class=\"form-control\"\n                name=\"familia\"\n                #familia=\"ngModel\"\n                [(ngModel)]=\"faunaService.selectedFauna.familia\"\n                placeholder=\"Añade la Familia\"\n                >\n          </div>\n          <div class=\"form-group\">\n              <input \n                type=\"text\"\n                class=\"form-control\"\n                name=\"genero\"\n                #genero=\"ngModel\"\n                [(ngModel)]=\"faunaService.selectedFauna.genero\"\n                placeholder=\"Añade el Género\"\n                >\n          </div> \n          <div class=\"form-group\">\n              <input \n                type=\"text\"\n                class=\"form-control\"\n                name=\"especie\"\n                #especie=\"ngModel\"\n                [(ngModel)]=\"faunaService.selectedFauna.especie\"\n                placeholder=\"Añade la Especie\"\n                >\n          </div>\n          <div class=\"form-group\">\n              <input \n                type=\"text\"\n                class=\"form-control\"\n                name=\"subespecie\"\n                #subespecie=\"ngModel\"\n                [(ngModel)]=\"faunaService.selectedFauna.subespecie\"\n                placeholder=\"Añade la Subespecie\"\n                >\n          </div>\n\n          <div class=\"form-group\">\n            <button class=\"btn btn-primary\" type=\"submit\">\n                <i class=\"fas fa-plus-circle\"></i> Añade un Animal\n            </button>\n            <button class=\"btn btn-secondary\" type=\"reset\" (click)=\"resetForm(faunaForm)\">\n                <i class=\"fas fa-sync-alt\"></i> Reiniciar\n            </button>\n          </div>\n        </form>\n  </div>\n</div>\n"
+module.exports = "<div class=\"container-fluid\">\n    <div class=\"row\">\n      <div class=\"col-md-5\">  \n      <div class=\"card mt-5 text-center\">\n        <div class=\"card-body\">\n          <h3 class=\"font-weight-bold\">Fauna</h3>\n          <hr style=\"color: #0056b2;\" />\n          <h5>-Datos Generales-</h5>\n            <form #faunaForm=\"ngForm\" (ngSubmit)=\"onSubmit(faunaForm)\">\n                <!-- Para actualizar los campos de un animal -->\n                <input type=\"hidden\" name=\"$key\" #$key=\"ngModel\" [(ngModel)]=\"faunaService.selectedFauna.$key\">\n\n                <div class=\"form-group\">\n                  <input disabled \n                    type=\"url\"\n                    class=\"form-control\"\n                    name=\"foto\"\n                    #foto=\"ngModel\"\n                    [(ngModel)]=\"faunaService.selectedFauna.foto\"\n                    placeholder=\"Foto de animal\"\n                  >\n                </div>\n\n                <div class=\"form-group\">\n                  <input \n                    type=\"text\"\n                    class=\"form-control\"\n                    name=\"nombre\"\n                    #nombre=\"ngModel\"\n                    [(ngModel)]=\"faunaService.selectedFauna.nombre\"\n                    placeholder=\"Añade el nombre del animal\"\n                    >\n                </div>\n                <div class=\"form-group\">\n                    <input \n                      type=\"text\"\n                      class=\"form-control\"\n                      name=\"dieta\"\n                      #dieta=\"ngModel\"\n                      [(ngModel)]=\"faunaService.selectedFauna.dieta\"\n                      placeholder=\"Añade la dieta del animal\"\n                      >\n                  </div>\n                <div class=\"form-group\">\n                  <input \n                    type=\"text\"\n                    class=\"form-control\"\n                    name=\"bioma\"\n                    #bioma=\"ngModel\"\n                    [(ngModel)]=\"faunaService.selectedFauna.bioma\"\n                    placeholder=\"Añade el biomedio del animal\"\n                    >\n                </div>\n                <div class=\"form-group\">\n                    <input \n                      type=\"text\"\n                      class=\"form-control\"\n                      name=\"estado\"\n                      #estado=\"ngModel\"\n                      [(ngModel)]=\"faunaService.selectedFauna.estado\"\n                      placeholder=\"Añade el estado de conservación\"\n                      >\n                </div>\n                <hr style=\"color: #0056b2;\" />\n                <h5>-Datos Etimológicos-</h5>\n                <div class=\"form-group\">\n                    <input \n                      type=\"text\"\n                      class=\"form-control\"\n                      name=\"clase\"\n                      #clase=\"ngModel\"\n                      [(ngModel)]=\"faunaService.selectedFauna.clase\"\n                      placeholder=\"Añade la Clase\"\n                      >\n                </div>\n                <div class=\"form-group\">\n                    <input \n                      type=\"text\"\n                      class=\"form-control\"\n                      name=\"orden\"\n                      #orden=\"ngModel\"\n                      [(ngModel)]=\"faunaService.selectedFauna.orden\"\n                      placeholder=\"Añade el Orden\"\n                      >\n                </div>\n                <div class=\"form-group\">\n                    <input \n                      type=\"text\"\n                      class=\"form-control\"\n                      name=\"familia\"\n                      #familia=\"ngModel\"\n                      [(ngModel)]=\"faunaService.selectedFauna.familia\"\n                      placeholder=\"Añade la Familia\"\n                      >\n                </div>\n                <div class=\"form-group\">\n                    <input \n                      type=\"text\"\n                      class=\"form-control\"\n                      name=\"genero\"\n                      #genero=\"ngModel\"\n                      [(ngModel)]=\"faunaService.selectedFauna.genero\"\n                      placeholder=\"Añade el Género\"\n                      >\n                </div> \n                <div class=\"form-group\">\n                    <input \n                      type=\"text\"\n                      class=\"form-control\"\n                      name=\"especie\"\n                      #especie=\"ngModel\"\n                      [(ngModel)]=\"faunaService.selectedFauna.especie\"\n                      placeholder=\"Añade la Especie\"\n                      >\n                </div>\n                <div class=\"form-group\">\n                    <input \n                      type=\"text\"\n                      class=\"form-control\"\n                      name=\"subespecie\"\n                      #subespecie=\"ngModel\"\n                      [(ngModel)]=\"faunaService.selectedFauna.subespecie\"\n                      placeholder=\"Añade la Subespecie\"\n                      >\n                </div>\n\n                <div class=\"form-group\">\n                  <button class=\"btn btn-primary\" type=\"submit\">\n                      <i class=\"fas fa-plus-circle\"></i> Añade un Animal\n                  </button>\n                  <button class=\"btn btn-secondary\" type=\"reset\" (click)=\"resetForm(faunaForm)\">\n                      <i class=\"fas fa-sync-alt\"></i> Reiniciar\n                  </button>\n                </div>\n              </form>\n        </div>\n</div>\n      </div>\n      <div class=\"col-md-7 text-center\">\n        <app-fauna-list></app-fauna-list>\n        </div>\n    </div>\n</div>"
 
 /***/ }),
 
@@ -361,7 +385,7 @@ var FaunaComponent = /** @class */ (function () {
         this.faunaService.selectedFauna = new __WEBPACK_IMPORTED_MODULE_2__models_fauna__["a" /* Fauna */]();
     };
     FaunaComponent = __decorate([
-        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
+        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["n" /* Component */])({
             selector: 'app-fauna',
             template: __webpack_require__("./src/app/components/datos/fauna/fauna.component.html"),
             styles: [__webpack_require__("./src/app/components/datos/fauna/fauna.component.css")]
@@ -385,7 +409,7 @@ module.exports = ""
 /***/ "./src/app/components/datos/flora-list/flora-list.component.html":
 /***/ (function(module, exports) {
 
-module.exports = "<div class=\"card mt-5\">\n  <div class=\"card-body\">\n    <h3 class=\"font-weight-bold\">Lista de Flora</h3>\n    <hr style=\"color: #0056b2;\" />\n    <table class=\"table table-sm table-hover\">\n      <tbody>\n        <tr *ngFor=\"let flora of floraList\">\n          <td><img width=\"200\" src=\"{{flora.foto}}\" alt=\"...\"></td>\n          <td>{{flora.nombre}}</td>\n          <td>\n            <a class=\"btn btn-secondary text-white\" (click)=\"onEdit(flora)\">\n                <i class=\"far fa-edit\"></i>\n            </a>\n            <a class=\"btn btn-danger text-white\" (click)=\"onDelete(flora.$key)\">\n                <i class=\"fas fa-trash-alt\"></i>\n            </a>\n          </td>\n        </tr>\n      </tbody>\n    </table>\n  </div>\n</div>"
+module.exports = "<div class=\"card mt-5 text-center\">\n  <div class=\"table\">\n    <table class=\"table table-sm table-hover table-bordered\">\n      <thead class=\"thead-dark\">\n        <tr>\n          <th scope=\"col\">Foto</th>\n          <th scope=\"col\">Nombre</th>\n          <th scope=\"col\">Biomedio</th>\n          <th scope=\"col\">Conservación</th>\n        </tr>\n        </thead>\n      <tbody>\n        <tr *ngFor=\"let flora of floraList | slice:0:10 \">\n          <td><img width=\"100\" src=\"{{flora.foto}}\" alt=\"...\"></td>\n          <td>{{flora.nombre}}</td>\n          <td>{{flora.bioma}}</td>\n          <td>{{flora.estado}}</td>\n          <td>\n            <a class=\"btn btn-secondary text-white\" (click)=\"onEdit(flora)\">\n                <i class=\"far fa-edit\"></i>\n            </a>\n            <a class=\"btn btn-danger text-white\" (click)=\"onDelete(flora.$key)\">\n                <i class=\"fas fa-trash-alt\"></i>\n            </a>\n          </td>\n        </tr>\n      </tbody>\n    </table>\n  </div>\n</div>"
 
 /***/ }),
 
@@ -438,7 +462,7 @@ var FloraListComponent = /** @class */ (function () {
         }
     };
     FloraListComponent = __decorate([
-        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
+        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["n" /* Component */])({
             selector: 'app-flora-list',
             template: __webpack_require__("./src/app/components/datos/flora-list/flora-list.component.html"),
             styles: [__webpack_require__("./src/app/components/datos/flora-list/flora-list.component.css")]
@@ -462,7 +486,7 @@ module.exports = ""
 /***/ "./src/app/components/datos/flora/flora.component.html":
 /***/ (function(module, exports) {
 
-module.exports = "<div class=\"card mt-5\">\n  <div class=\"card-body\">\n  \t<h3 class=\"font-weight-bold\">Flora</h3>\n  \t<hr style=\"color: #0056b2;\" />\n  \t<h5>-Datos Generales-</h5>\n      <form #floraForm=\"ngForm\" (ngSubmit)=\"onSubmit(floraForm)\">\n          <!-- Para actualizar los campos de una planta -->\n          <input type=\"hidden\" name=\"$key\" #$key=\"ngModel\" [(ngModel)]=\"floraService.selectedFlora.$key\">\n\n          <div class=\"form-group\">\n            <input  disabled\n              typeblock=\"null\"\n              class=\"form-control\"\n              name=\"foto\"\n              #foto=\"ngModel\"\n              [(ngModel)]=\"floraService.selectedFlora.foto\"\n              placeholder=\"Foto de la planta\"\n              >\n          </div>\n\n          <div class=\"form-group\">\n            <input \n              type=\"text\"\n              class=\"form-control\"\n              name=\"nombre\"\n              #nombre=\"ngModel\"\n              [(ngModel)]=\"floraService.selectedFlora.nombre\"\n              placeholder=\"Añade el nombre de la planta\"\n              >\n          </div>\n          <div class=\"form-group\">\n            <input \n              type=\"text\"\n              class=\"form-control\"\n              name=\"bioma\"\n              #bioma=\"ngModel\"\n              [(ngModel)]=\"floraService.selectedFlora.bioma\"\n              placeholder=\"Añade el biomedio de la planta\"\n              >\n          </div>\n          <div class=\"form-group\">\n              <input \n                type=\"text\"\n                class=\"form-control\"\n                name=\"estado\"\n                #estado=\"ngModel\"\n                [(ngModel)]=\"floraService.selectedFlora.estado\"\n                placeholder=\"Añade el estado de conservación\"\n                >\n          </div>\n          <hr style=\"color: #0056b2;\" />\n          <h5>-Datos Etimológicos-</h5>\n          <div class=\"form-group\">\n              <input \n                type=\"text\"\n                class=\"form-control\"\n                name=\"clase\"\n                #clase=\"ngModel\"\n                [(ngModel)]=\"floraService.selectedFlora.clase\"\n                placeholder=\"Añade la Clase\"\n                >\n          </div>\n          <div class=\"form-group\">\n              <input \n                type=\"text\"\n                class=\"form-control\"\n                name=\"orden\"\n                #orden=\"ngModel\"\n                [(ngModel)]=\"floraService.selectedFlora.orden\"\n                placeholder=\"Añade el Orden\"\n                >\n          </div>\n          <div class=\"form-group\">\n              <input \n                type=\"text\"\n                class=\"form-control\"\n                name=\"familia\"\n                #familia=\"ngModel\"\n                [(ngModel)]=\"floraService.selectedFlora.familia\"\n                placeholder=\"Añade la Familia\"\n                >\n          </div>\n          <div class=\"form-group\">\n              <input \n                type=\"text\"\n                class=\"form-control\"\n                name=\"genero\"\n                #genero=\"ngModel\"\n                [(ngModel)]=\"floraService.selectedFlora.genero\"\n                placeholder=\"Añade el Género\"\n                >\n          </div> \n          <div class=\"form-group\">\n              <input \n                type=\"text\"\n                class=\"form-control\"\n                name=\"especie\"\n                #especie=\"ngModel\"\n                [(ngModel)]=\"floraService.selectedFlora.especie\"\n                placeholder=\"Añade la Especie\"\n                >\n          </div>\n\n          <div class=\"form-group\">\n            <button class=\"btn btn-primary\" type=\"submit\">\n                <i class=\"fas fa-plus-circle\"></i> Añade una Planta\n            </button>\n            <button class=\"btn btn-secondary\" type=\"reset\" (click)=\"resetForm(floraForm)\">\n                <i class=\"fas fa-sync-alt\"></i> Reiniciar\n            </button>\n          </div>\n        </form>\n  </div>\n</div>\n"
+module.exports = "<div class=\"container-fluid\">\n    <div class=\"row\">\n      <div class=\"col-md-5\">  \n        <div class=\"card mt-5 text-center\">\n          <div class=\"card-body\">\n          \t<h3 class=\"font-weight-bold\">Flora</h3>\n          \t<hr style=\"color: #0056b2;\" />\n          \t<h5>-Datos Generales-</h5>\n              <form #floraForm=\"ngForm\" (ngSubmit)=\"onSubmit(floraForm)\">\n                  <!-- Para actualizar los campos de una planta -->\n                  <input type=\"hidden\" name=\"$key\" #$key=\"ngModel\" [(ngModel)]=\"floraService.selectedFlora.$key\">\n\n                  <div class=\"form-group\">\n                    <input  disabled\n                      typeblock=\"null\"\n                      class=\"form-control\"\n                      name=\"foto\"\n                      #foto=\"ngModel\"\n                      [(ngModel)]=\"floraService.selectedFlora.foto\"\n                      placeholder=\"Foto de la planta\"\n                      >\n                  </div>\n\n                  <div class=\"form-group\">\n                    <input \n                      type=\"text\"\n                      class=\"form-control\"\n                      name=\"nombre\"\n                      #nombre=\"ngModel\"\n                      [(ngModel)]=\"floraService.selectedFlora.nombre\"\n                      placeholder=\"Añade el nombre de la planta\"\n                      >\n                  </div>\n                  <div class=\"form-group\">\n                    <input \n                      type=\"text\"\n                      class=\"form-control\"\n                      name=\"bioma\"\n                      #bioma=\"ngModel\"\n                      [(ngModel)]=\"floraService.selectedFlora.bioma\"\n                      placeholder=\"Añade el biomedio de la planta\"\n                      >\n                  </div>\n                  <div class=\"form-group\">\n                      <input \n                        type=\"text\"\n                        class=\"form-control\"\n                        name=\"estado\"\n                        #estado=\"ngModel\"\n                        [(ngModel)]=\"floraService.selectedFlora.estado\"\n                        placeholder=\"Añade el estado de conservación\"\n                        >\n                  </div>\n                  <hr style=\"color: #0056b2;\" />\n                  <h5>-Datos Etimológicos-</h5>\n                  <div class=\"form-group\">\n                      <input \n                        type=\"text\"\n                        class=\"form-control\"\n                        name=\"clase\"\n                        #clase=\"ngModel\"\n                        [(ngModel)]=\"floraService.selectedFlora.clase\"\n                        placeholder=\"Añade la Clase\"\n                        >\n                  </div>\n                  <div class=\"form-group\">\n                      <input \n                        type=\"text\"\n                        class=\"form-control\"\n                        name=\"orden\"\n                        #orden=\"ngModel\"\n                        [(ngModel)]=\"floraService.selectedFlora.orden\"\n                        placeholder=\"Añade el Orden\"\n                        >\n                  </div>\n                  <div class=\"form-group\">\n                      <input \n                        type=\"text\"\n                        class=\"form-control\"\n                        name=\"familia\"\n                        #familia=\"ngModel\"\n                        [(ngModel)]=\"floraService.selectedFlora.familia\"\n                        placeholder=\"Añade la Familia\"\n                        >\n                  </div>\n                  <div class=\"form-group\">\n                      <input \n                        type=\"text\"\n                        class=\"form-control\"\n                        name=\"genero\"\n                        #genero=\"ngModel\"\n                        [(ngModel)]=\"floraService.selectedFlora.genero\"\n                        placeholder=\"Añade el Género\"\n                        >\n                  </div> \n                  <div class=\"form-group\">\n                      <input \n                        type=\"text\"\n                        class=\"form-control\"\n                        name=\"especie\"\n                        #especie=\"ngModel\"\n                        [(ngModel)]=\"floraService.selectedFlora.especie\"\n                        placeholder=\"Añade la Especie\"\n                        >\n                  </div>\n\n                  <div class=\"form-group\">\n                    <button class=\"btn btn-primary\" type=\"submit\">\n                        <i class=\"fas fa-plus-circle\"></i> Añade una Planta\n                    </button>\n                    <button class=\"btn btn-secondary\" type=\"reset\" (click)=\"resetForm(floraForm)\">\n                        <i class=\"fas fa-sync-alt\"></i> Reiniciar\n                    </button>\n                  </div>\n                </form>\n          </div>\n        </div>\n    </div>\n  <div class=\"col-md-7 text-center\">\n        <app-flora-list></app-flora-list>\n  </div>\n</div>\n</div>"
 
 /***/ }),
 
@@ -516,7 +540,7 @@ var FloraComponent = /** @class */ (function () {
         this.floraService.selectedFlora = new __WEBPACK_IMPORTED_MODULE_2__models_flora__["a" /* Flora */]();
     };
     FloraComponent = __decorate([
-        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
+        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["n" /* Component */])({
             selector: 'app-flora',
             template: __webpack_require__("./src/app/components/datos/flora/flora.component.html"),
             styles: [__webpack_require__("./src/app/components/datos/flora/flora.component.css")]
@@ -524,61 +548,6 @@ var FloraComponent = /** @class */ (function () {
         __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1__services_flora_service__["a" /* FloraService */], __WEBPACK_IMPORTED_MODULE_3_ngx_toastr__["b" /* ToastrService */]])
     ], FloraComponent);
     return FloraComponent;
-}());
-
-
-
-/***/ }),
-
-/***/ "./src/app/components/datos/fotos/fotos.component.css":
-/***/ (function(module, exports) {
-
-module.exports = ""
-
-/***/ }),
-
-/***/ "./src/app/components/datos/fotos/fotos.component.html":
-/***/ (function(module, exports) {
-
-module.exports = "\n"
-
-/***/ }),
-
-/***/ "./src/app/components/datos/fotos/fotos.component.ts":
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return FotosComponent; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__("./node_modules/@angular/core/esm5/core.js");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__services_fotos_service__ = __webpack_require__("./src/app/services/fotos.service.ts");
-var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
-    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
-    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
-    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
-    return c > 3 && r && Object.defineProperty(target, key, r), r;
-};
-var __metadata = (this && this.__metadata) || function (k, v) {
-    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
-};
-
-//Import de Service: 
-
-var FotosComponent = /** @class */ (function () {
-    function FotosComponent(fotosService) {
-        this.fotosService = fotosService;
-    }
-    FotosComponent.prototype.ngOnInit = function () {
-        this.fotosService.getFotos();
-    };
-    FotosComponent = __decorate([
-        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
-            selector: 'app-fotos',
-            template: __webpack_require__("./src/app/components/datos/fotos/fotos.component.html"),
-            styles: [__webpack_require__("./src/app/components/datos/fotos/fotos.component.css")]
-        }),
-        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1__services_fotos_service__["a" /* FotosService */]])
-    ], FotosComponent);
-    return FotosComponent;
 }());
 
 
@@ -609,21 +578,6 @@ var Flora = /** @class */ (function () {
     function Flora() {
     }
     return Flora;
-}());
-
-
-
-/***/ }),
-
-/***/ "./src/app/models/fotos.ts":
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return Fotos; });
-var Fotos = /** @class */ (function () {
-    function Fotos() {
-    }
-    return Fotos;
 }());
 
 
@@ -695,7 +649,7 @@ var FaunaService = /** @class */ (function () {
         this.faunaList.remove($key);
     };
     FaunaService = __decorate([
-        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["y" /* Injectable */])(),
+        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["A" /* Injectable */])(),
         __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_angularfire2_database__["a" /* AngularFireDatabase */]])
     ], FaunaService);
     return FaunaService;
@@ -767,49 +721,10 @@ var FloraService = /** @class */ (function () {
         this.floraList.remove($key);
     };
     FloraService = __decorate([
-        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["y" /* Injectable */])(),
+        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["A" /* Injectable */])(),
         __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_angularfire2_database__["a" /* AngularFireDatabase */]])
     ], FloraService);
     return FloraService;
-}());
-
-
-
-/***/ }),
-
-/***/ "./src/app/services/fotos.service.ts":
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return FotosService; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__("./node_modules/@angular/core/esm5/core.js");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__models_fotos__ = __webpack_require__("./src/app/models/fotos.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_angularfire2_database__ = __webpack_require__("./node_modules/angularfire2/database/index.js");
-var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
-    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
-    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
-    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
-    return c > 3 && r && Object.defineProperty(target, key, r), r;
-};
-var __metadata = (this && this.__metadata) || function (k, v) {
-    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
-};
-
-
-
-var FotosService = /** @class */ (function () {
-    function FotosService(firebase) {
-        this.firebase = firebase;
-        this.selectedFotos = new __WEBPACK_IMPORTED_MODULE_1__models_fotos__["a" /* Fotos */]();
-    }
-    FotosService.prototype.getFotos = function () {
-        return this.fotosList = this.firebase.list('Fotos');
-    };
-    FotosService = __decorate([
-        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["y" /* Injectable */])(),
-        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_2_angularfire2_database__["a" /* AngularFireDatabase */]])
-    ], FotosService);
-    return FotosService;
 }());
 
 
@@ -821,12 +736,8 @@ var FotosService = /** @class */ (function () {
 
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return environment; });
-// The file contents for the current environment will overwrite these during build.
-// The build system defaults to the dev environment which uses `environment.ts`, but if you do
-// `ng build --env=prod` then `environment.prod.ts` will be used instead.
-// The list of which env maps to which file can be found in `.angular-cli.json`.
 var environment = {
-    production: false,
+    production: true,
     //Se conecta con la base de datos Realtime hecha en Firebase:
     firebase: {
         apiKey: "AIzaSyDbfn_hdvvMu46afLwJrF6SUmBJK4YZexg",
@@ -855,7 +766,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 
 
 if (__WEBPACK_IMPORTED_MODULE_3__environments_environment__["a" /* environment */].production) {
-    Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["_9" /* enableProdMode */])();
+    Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["_13" /* enableProdMode */])();
 }
 Object(__WEBPACK_IMPORTED_MODULE_1__angular_platform_browser_dynamic__["a" /* platformBrowserDynamic */])().bootstrapModule(__WEBPACK_IMPORTED_MODULE_2__app_app_module__["a" /* AppModule */])
     .catch(function (err) { return console.log(err); });
