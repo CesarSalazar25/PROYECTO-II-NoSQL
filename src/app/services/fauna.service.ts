@@ -19,7 +19,6 @@ export class FaunaService
 
   getFauna()
   {
-    //this.faunaList.foto=firebase.collection('Fotos');
     return this.faunaList = this.firebase.list('Fauna');
   }
 

@@ -11,7 +11,7 @@
           <th scope="col">Conservación</th>
         </thead>
       <tbody>
-        <tr *ngFor="let fauna of faunaList">
+        <tr *ngFor="let fauna of faunaList | slice:0:10">
           <td><img width="100" src="{{fauna.foto}}" alt="..."></td>
           <td>{{fauna.nombre}}</td>
           <td>{{fauna.dieta}}</td>

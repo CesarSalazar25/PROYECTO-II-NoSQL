@@ -5,8 +5,8 @@ import { FloraComponent }      from './components/datos/flora/flora.component';
 
 const routes: Routes = [
   { path: '', redirectTo: '/datos', pathMatch: 'full' },
-  { path: '/fauna', component:  FaunaComponent },
-  { path: '/flora', component: FloraComponent },
+  { path: 'fauna', component:  FaunaComponent },
+  { path: 'flora', component: FloraComponent },
 ];
 
 @NgModule({
