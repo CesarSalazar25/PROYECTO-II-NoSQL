@@ -9,7 +9,7 @@ import { Fauna } from '../models/fauna';
 
 
 @Injectable()
-export class FaunaService 
+export class FaunaService
 {
 
   faunaList: AngularFireList<any>;
@@ -62,4 +62,6 @@ export class FaunaService
   {
     this.faunaList.remove($key);
   }
+
+
 }

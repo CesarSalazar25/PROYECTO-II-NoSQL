@@ -13,18 +13,9 @@ export class AppComponent
 {
   title = 'Aechmea';
 
-  //Para firestore:
-  /*itemsCollection: AngularFirestoreCollection<Items>;
-  items: Observable<Items[]>;
-
-  constructor(public afs: AngularFirestore){ }
-
   ngOnInit()
   {
-    this.itemsCollection = this.afs.collection('items', ref=>{
-      return ref.orderBy('nombre_Animal');
-    })
-    this.items = this.itemsCollection.valueChanges();
-  }*/
+
+  }
 
 }

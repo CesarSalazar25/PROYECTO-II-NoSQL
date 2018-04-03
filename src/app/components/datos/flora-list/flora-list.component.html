@@ -10,7 +10,7 @@
         </tr>
         </thead>
       <tbody>
-        <tr *ngFor="let flora of floraList">
+        <tr *ngFor="let flora of floraList | slice:0:10 ">
           <td><img width="100" src="{{flora.foto}}" alt="..."></td>
           <td>{{flora.nombre}}</td>
           <td>{{flora.bioma}}</td>

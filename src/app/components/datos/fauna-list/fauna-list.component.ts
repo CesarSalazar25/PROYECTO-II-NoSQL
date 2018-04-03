@@ -2,15 +2,12 @@ import { Component, OnInit } from '@angular/core';
 
 //Imports del Model:
 import { Fauna } from '../../../models/fauna';
-import { Fotos } from '../../../models/fotos';
 
 //Imports del Service:
 import { FaunaService } from '../../../services/fauna.service';
 
 //Imports del toastr:
 import { ToastrService } from 'ngx-toastr';
-
-//import { AngularFireDatabase } from 'angularfire2/database';
 
 @Component({
   selector: 'app-fauna-list',
@@ -24,6 +21,7 @@ export class FaunaListComponent implements OnInit {
   constructor(private faunaService: FaunaService, private toastr: ToastrService) { }
 
   ngOnInit() {
+
     return this.faunaService.getFauna()
       .snapshotChanges().subscribe(item => {
         this.faunaList = [];
