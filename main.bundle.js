@@ -37,9 +37,9 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 
 
 var routes = [
-    { path: '', redirectTo: '/datos', pathMatch: 'full' },
-    { path: 'fauna', component: __WEBPACK_IMPORTED_MODULE_2__components_datos_fauna_fauna_component__["a" /* FaunaComponent */] },
-    { path: 'flora', component: __WEBPACK_IMPORTED_MODULE_3__components_datos_flora_flora_component__["a" /* FloraComponent */] },
+    { path: '', redirectTo: ' https://cesarsalazar25.github.io/datos', pathMatch: 'full' },
+    { path: ' https://cesarsalazar25.github.io/fauna', component: __WEBPACK_IMPORTED_MODULE_2__components_datos_fauna_fauna_component__["a" /* FaunaComponent */] },
+    { path: ' https://cesarsalazar25.github.io/flora', component: __WEBPACK_IMPORTED_MODULE_3__components_datos_flora_flora_component__["a" /* FloraComponent */] },
 ];
 var AppRoutingModule = /** @class */ (function () {
     function AppRoutingModule() {
@@ -67,7 +67,7 @@ module.exports = ""
 /***/ "./src/app/app.component.html":
 /***/ (function(module, exports) {
 
-module.exports = "<!--¡Hola mami! ¡Mira soy un comentario en HTML! <3-->\n  <nav class=\"navbar navbar-expand-lg navbar-dark bg-dark\">\n  <a class=\"navbar-brand\" href=\"#\">Aechmea - Fauna y Flora de Venezuela</a>\n  <button class=\"navbar-toggler\" type=\"button\" data-toggle=\"collapse\" data-target=\"#navbarNavAltMarkup\" aria-controls=\"navbarNavAltMarkup\" aria-expanded=\"false\" aria-label=\"Toggle navigation\">\n    <span class=\"navbar-toggler-icon\"></span>\n  </button>\n  <div class=\"collapse navbar-collapse\" id=\"navbarNavAltMarkup\">\n    <div class=\"navbar-nav\">\n      <a class=\"nav-item nav-link active\" href=\"/fauna\">Fauna<span class=\"sr-only\">(current)</span></a>\n      <a class=\"nav-item nav-link\" href=\"/flora\">Flora</a>\n    </div>\n  </div>\n</nav>\n\n<div class=\"text-center\">\n  <img width=\"400\" src=\"https://firebasestorage.googleapis.com/v0/b/aechmea-flora-y-fauna-de-vzla.appspot.com/o/Recursos%2Faechmea_applogo.png?alt=media&token=db6d4528-dbad-4f33-88db-915bbbbbecf0\" class=\"rounded\" alt=\"Aechmea Logo\">\n</div>\n    <hr style=\"color: #0056b2;\" />\n    <div class=\"card text-justified\">\n  <div class=\"card-body\">\n    ¡Bienvenido a Aechmea! Tu apliciación confiable y actualizada sobre la fauna y flora de Venezuela, paséate por ambas secciones y descubre las diversas y exóticas especies que habitan en los diversos ecosistemas del país.\n  </div>\n</div>\n  <app-datos></app-datos>\n"
+module.exports = "<!--¡Hola mami! ¡Mira soy un comentario en HTML! <3-->\r\n  <nav class=\"navbar navbar-expand-lg navbar-dark bg-dark\">\r\n  <a class=\"navbar-brand\" href=\"#\">Aechmea - Fauna y Flora de Venezuela</a>\r\n  <button class=\"navbar-toggler\" type=\"button\" data-toggle=\"collapse\" data-target=\"#navbarNavAltMarkup\" aria-controls=\"navbarNavAltMarkup\" aria-expanded=\"false\" aria-label=\"Toggle navigation\">\r\n    <span class=\"navbar-toggler-icon\"></span>\r\n  </button>\r\n</nav>\r\n\r\n<div class=\"text-center\">\r\n  <img width=\"400\" src=\"https://firebasestorage.googleapis.com/v0/b/aechmea-flora-y-fauna-de-vzla.appspot.com/o/Recursos%2Faechmea_applogo.png?alt=media&token=db6d4528-dbad-4f33-88db-915bbbbbecf0\" class=\"rounded\" alt=\"Aechmea Logo\">\r\n</div>\r\n    <hr style=\"color: #0056b2;\" />\r\n    <div class=\"card text-center\">\r\n  <div class=\"card-body\">\r\n    ¡Bienvenido a Aechmea! Tu apliciación confiable y actualizada sobre la fauna y flora de Venezuela, paséate por ambas secciones y descubre las diversas y exóticas especies que habitan en los diversos ecosistemas del país.\r\n  </div>\r\n</div>\r\n  <app-datos></app-datos>\r\n"
 
 /***/ }),
 
@@ -204,7 +204,7 @@ module.exports = ""
 /***/ "./src/app/components/datos/datos.component.html":
 /***/ (function(module, exports) {
 
-module.exports = "<router-outlet></router-outlet> \n\n"
+module.exports = "\n<app-fauna></app-fauna>\n<hr style=\"color: #0056b2;\" />\n<app-flora></app-flora>\n\n"
 
 /***/ }),
 
@@ -254,7 +254,7 @@ module.exports = ""
 /***/ "./src/app/components/datos/fauna-list/fauna-list.component.html":
 /***/ (function(module, exports) {
 
-module.exports = "<div class=\"card mt-5 text-center\">  \n  <div class=\"table\">\n    <!--<h3 class=\"font-weight-bold\">Lista de Fauna</h3>\n    <hr style=\"color: #0056b2;\" />-->\n    <table class=\"table table-sm table-hover table-bordered\">\n        <thead class=\"thead-dark\">\n          <th scope=\"col\">Foto</th>\n          <th scope=\"col\">Nombre</th>\n          <th scope=\"col\">Dieta</th>\n          <th scope=\"col\">Biomedio</th>\n          <th scope=\"col\">Conservación</th>\n        </thead>\n      <tbody>\n        <tr *ngFor=\"let fauna of faunaList\">\n          <td><img width=\"100\" src=\"{{fauna.foto}}\" alt=\"...\"></td>\n          <td>{{fauna.nombre}}</td>\n          <td>{{fauna.dieta}}</td>\n          <td>{{fauna.bioma}}</td>\n          <td>{{fauna.estado}}</td>\n          <td>\n            <a class=\"btn btn-secondary text-white\" (click)=\"onEdit(fauna)\">\n                <i class=\"far fa-edit\"></i>\n            </a>\n            <a class=\"btn btn-danger text-white\" (click)=\"onDelete(fauna.$key)\">\n                <i class=\"fas fa-trash-alt\"></i>\n            </a>\n          </td>\n        </tr>\n      </tbody>\n    </table>\n  </div>\n</div>"
+module.exports = "<div class=\"card mt-5 text-center\">  \n  <div class=\"table\">\n    <!--<h3 class=\"font-weight-bold\">Lista de Fauna</h3>\n    <hr style=\"color: #0056b2;\" />-->\n    <table class=\"table table-sm table-hover table-bordered\">\n        <thead class=\"thead-dark\">\n          <th scope=\"col\">Foto</th>\n          <th scope=\"col\">Nombre</th>\n          <th scope=\"col\">Dieta</th>\n          <th scope=\"col\">Biomedio</th>\n          <th scope=\"col\">Conservación</th>\n        </thead>\n      <tbody>\n        <tr *ngFor=\"let fauna of faunaList | slice:0:10\">\n          <td><img width=\"100\" src=\"{{fauna.foto}}\" alt=\"...\"></td>\n          <td>{{fauna.nombre}}</td>\n          <td>{{fauna.dieta}}</td>\n          <td>{{fauna.bioma}}</td>\n          <td>{{fauna.estado}}</td>\n          <td>\n            <a class=\"btn btn-secondary text-white\" (click)=\"onEdit(fauna)\">\n                <i class=\"far fa-edit\"></i>\n            </a>\n            <a class=\"btn btn-danger text-white\" (click)=\"onDelete(fauna.$key)\">\n                <i class=\"fas fa-trash-alt\"></i>\n            </a>\n          </td>\n        </tr>\n      </tbody>\n    </table>\n  </div>\n</div>"
 
 /***/ }),
 
